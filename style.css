@@ -1,0 +1,116 @@
+body {
+    margin: 0 20vh;
+    min-width: 250px;
+    background-color: rgb(75, 75, 71);
+}
+
+* {
+    box-sizing: border-box;
+}
+ul {
+    margin: 5vh 4vh;
+    padding: 0;
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 20px;
+    transition: 0.2s;
+    border: 3px solid rgb(54, 54, 56);
+    border-radius: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ul li:nth-child(odd) {
+    background: #ffffff;
+}
+ul li:hover {
+    background: #ebbfbd;
+}
+ul li.checked {
+    background:grey;
+    color: #fff;
+    text-decoration: line-through;
+
+}
+ul li.checked::before {
+    position: absolute;
+    content: '';
+    border-width: 0 2px 5px 0 !important;
+    border: 0 solid #fff;
+    top: 10px;
+    left: 15px;
+    transform: rotate(40deg);
+    height: 20px;
+    width: 5px;
+}
+.close {
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 15px 10px 15px;
+}
+
+.close:hover {
+    background-color: #e9f1eb62;
+    color: grey;
+    width: 5%;
+}
+.heading {
+    background-color:rgb(6, 7, 6);
+    margin: 20px 0;
+    padding: 15px 20px;
+    text-align: center;
+    height: 200px;
+    border-radius: 60px;
+}
+
+
+div h2 {
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+}
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+input {
+    margin: 10px 40px;
+    padding: 10px;
+    border: none;
+    border-style: none;
+    border-radius: 15px;
+    width: 60%;
+    float: left;
+    font-size: 15px;
+}
+.addBtn {
+    margin: 10px;
+    padding: 5px;
+    width: 25%;
+    background: #dac2c2;
+    color: rgb(10, 9, 9);
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.addBtn:hover {
+    background-color: #555;
+    color: rgb(189, 15, 15);
+
+
+}
